@@ -1,0 +1,13 @@
+@model List<dotnetapp.Models.Book>
+
+<h2>All Books in the Library</h2>
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>ID: @book.Id</li>
+        <li>Title: @book.Title</li>
+        <li>Author: @book.Author</li>
+        <li>Published Year: @book.PublishedYear</li>
+    }
+</ul>
